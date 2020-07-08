@@ -68,7 +68,7 @@ class Dog
       return_dog = self.create({:name => name, :breed => breed})
     end
     return_dog
-    binding.pry
+    #binding.pry
   end
 
   def self.find_by_name(name)
