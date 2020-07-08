@@ -1,3 +1,4 @@
+require 'pry'
 class Dog
   attr_accessor :name, :breed, :id
   def initialize(attributes)
@@ -67,6 +68,7 @@ class Dog
       return_dog = self.create({:name => name, :breed => breed})
     end
     return_dog
+    binding.pry
   end
 
   def self.find_by_name(name)
